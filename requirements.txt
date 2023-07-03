@@ -1,0 +1,6 @@
+openai
+deepgram-sdk
+elevenlabs
+python-dotenv
+google-cloud-texttospeech
+boto3
