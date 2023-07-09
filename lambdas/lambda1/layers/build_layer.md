@@ -25,7 +25,7 @@ docker pull public.ecr.aws/sam/build-python3.10:1.84.0-20230517004040
 docker run -it -v $(pwd):/var/task public.ecr.aws/sam/build-python3.10:1.84.0-20230517004040
 foldername="transcriptionlayer"
 pip install -r requirements.txt -t python/
-zip -r "python.zip" ./python/
+zip -r "$foldername.zip" ./python/
 ```
 
 > Create a new layer in the AWS Console and upload the zip file. Make sure to select Python 3.10 as the runtime. Guide to create a new layer can be found [here](https://medium.com/the-cloud-architect/getting-started-with-aws-lambda-layers-for-python-6e10b1f9a5d).

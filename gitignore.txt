@@ -3,3 +3,4 @@ __pycache__/
 transcriptionlayer/
 texttospeechlayer/
 python/
+.DS_Store
